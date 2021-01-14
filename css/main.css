@@ -63,7 +63,8 @@ svg {
 .projects-title {
   position: relative;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin: 0 0 0 50px;
+  font-weight: 800;
   z-index: 10;
 }
 .card {
@@ -90,6 +91,7 @@ svg {
   padding: 0 10px;
   transition: .3s ease;
 }
+
 .card li:hover {
   opacity: 0.8;
 }
@@ -100,12 +102,40 @@ svg {
   text-align: justify;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .name {
     font-size: 2rem;
   }
 
   .card {
     display: block;
+  }
+
+  .centvh li {
+    font-size: 1rem;
+  }
+
+  .centvh {
+    height: 60vh;
+  } 
+
+  .projects-section {
+    max-width: 1100px;
+    margin: 0px auto 0 auto;
+  }
+
+  .card {
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .card img {
+    margin-top: 10px;
+  }
+
+  .card li {
+    font-size: .7rem;
   }
 }
