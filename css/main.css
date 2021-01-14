@@ -21,6 +21,12 @@ p {
   text-align: justify;
 }
 
+footer {
+  color: white;
+  height: 100px;
+  background: #00bb9c;
+}
+
 .blockcentre {
   max-width: 1200px;
   margin: 0 auto;
@@ -62,7 +68,7 @@ p {
 .about-section {
   position: relative;
   margin: -50px auto 0 auto;
-  height: 700px;
+  height: 720px;
   overflow: hidden;
 }
 
@@ -92,6 +98,7 @@ p {
 }
 
 .green-section {
+  position: relative;
   background: #00CBA9;
 }
 
@@ -143,8 +150,9 @@ p {
 }
 
 .education-section {
-  max-width: 1200px;
-  margin: 0 auto;
+  position: relative;
+  color: white;
+  height: 500px;
 }
 
 .education-title {
@@ -153,11 +161,6 @@ p {
   margin: 0 0 0 50px;
   font-weight: 800;
   z-index: 10;
-}
-
-.projects-section {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .projects-title {
