@@ -247,4 +247,8 @@ p {
   .about-divide {
     display: block;
   }
+
+  .about-section {
+    height: 800px;
+  }
 }
