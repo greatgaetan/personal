@@ -7,13 +7,23 @@
 }
 
 body {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   background: #f9f9f9;
 }
+
 svg {
   position: absolute;
   bottom: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.blockcentre {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .centvh {
@@ -49,17 +59,107 @@ svg {
   margin-right: 30px;
 }
 
-.name {
+.about-section {
+  position: relative;
+  margin: -50px auto 0 auto;
+  height: 700px;
+  overflow: hidden;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin: 0 0 0 50px;
+  font-weight: 800;
+}
+
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;  
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.about-divide {
+  display: flex;
+  flex-direction: row;
+}
+
+.green-section {
+  background: #00CBA9;
+}
+
+.about-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 5px solid #00CBA9;
+}
+
+.textandcv {
+  width: 70%;
+  overflow: hidden;
+}
+
+.margin-bottom-ten {
+  margin-bottom: 10px;
+}
+
+.cv-button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin: 10px 0;
+  border-radius:2em;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#00CBA9;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.cv-button:hover{
+  background-color:#00bb9c;
+  cursor: pointer;
+}
+
+.cv-button:hover i {
+  margin-left: 10px;
+  transform: scale(1);
+}
+
+.cv-button i {
+  transform: scale(0);
+  overflow: hidden;
+  margin-left: -15px;
+  transition: transform .2s ease, margin-left .5s ease;
+}
+
+.education-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-title {
+  position: relative;
   font-size: 3rem;
+  margin: 0 0 0 50px;
+  font-weight: 800;
+  z-index: 10;
 }
 
 .projects-section {
-  max-width: 1100px;
-  margin: -100px auto 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .projects-title {
   position: relative;
   font-size: 3rem;
@@ -67,6 +167,7 @@ svg {
   font-weight: 800;
   z-index: 10;
 }
+
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -77,11 +178,13 @@ svg {
   justify-items: center;
   align-items: center;
 }
+
 .card ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
 }
+
 .card li {
   cursor: default;
   border-radius: 20px;
@@ -95,11 +198,9 @@ svg {
 .card li:hover {
   opacity: 0.8;
 }
+
 .card > div {
   padding: 2rem;
-}
-.card p {
-  text-align: justify;
 }
 
 @media (max-width: 900px) {
@@ -119,11 +220,6 @@ svg {
     height: 60vh;
   } 
 
-  .projects-section {
-    max-width: 1100px;
-    margin: 0px auto 0 auto;
-  }
-
   .card {
     width: 80%;
     height: 80%;
@@ -137,5 +233,18 @@ svg {
 
   .card li {
     font-size: .7rem;
+  }
+
+  .about-section p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .textandcv {
+    width: 100%
+  }
+
+  .about-divide {
+    display: block;
   }
 }
