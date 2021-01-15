@@ -28,41 +28,58 @@
                 $("body").css('background', '#1b1e1f');
                 $(".card-bg").css('background', "rgb(32, 35, 36)");
                 $('.svgfill').css('fill', '#1b1e1f');
+                document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
             } else if ($('#mode').attr('class') == "switch-button dark") {
                 $('#mode').attr('class', "switch-button light");
                 $("body").css('color', 'black');
                 $("body").css('background', '#f9f9f9');
                 $(".card-bg").css('background', "#f1f1f1");
                 $('.svgfill').css('fill', '#f9f9f9');
+                document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
             }
         })
     });
 </script>
+<script>
+    window.onscroll = function () {
+        if (window.scrollY > 1) {
+            $(".dark-mode-text").css('opacity', '0');
+        } else {
+            $(".dark-mode-text").css('opacity', '1');
+        }
+    }
+</script>
 
 <body>
     <section class="centvh">
-        <ul>
-            <li data-aos="fade-down">G</li>
-            <li data-aos="fade-down" data-aos-delay="50">A</li>
-            <li data-aos="fade-down" data-aos-delay="100">Ë</li>
-            <li data-aos="fade-down" data-aos-delay="150">T</li>
-            <li data-aos="fade-down" data-aos-delay="200">A</li>
-            <li data-aos="fade-down" data-aos-delay="250" class="space">N</li>
-            <li data-aos="fade-down" data-aos-delay="300">D</li>
-            <li data-aos="fade-down" data-aos-delay="350">I</li>
-            <li data-aos="fade-down" data-aos-delay="400">D</li>
-            <li data-aos="fade-down" data-aos-delay="450">D</li>
-            <li data-aos="fade-down" data-aos-delay="500">E</li>
-            <li data-aos="fade-down" data-aos-delay="550">R</li>
-            <li data-aos="fade-down" data-aos-delay="600">E</li>
-            <li data-aos="fade-down" data-aos-delay="650">N</li>
-        </ul>
+        <div class="twolines">
+            <ul>
+                <li data-aos="fade-down">G</li>
+                <li data-aos="fade-down" data-aos-delay="50">A</li>
+                <li data-aos="fade-down" data-aos-delay="100">Ë</li>
+                <li data-aos="fade-down" data-aos-delay="150">T</li>
+                <li data-aos="fade-down" data-aos-delay="200">A</li>
+                <li data-aos="fade-down" data-aos-delay="250" class="space">N</li>
+            </ul>
+            <ul>
+                <li data-aos="fade-down" data-aos-delay="300">D</li>
+                <li data-aos="fade-down" data-aos-delay="350">I</li>
+                <li data-aos="fade-down" data-aos-delay="400">D</li>
+                <li data-aos="fade-down" data-aos-delay="450">D</li>
+                <li data-aos="fade-down" data-aos-delay="500">E</li>
+                <li data-aos="fade-down" data-aos-delay="550">R</li>
+                <li data-aos="fade-down" data-aos-delay="600">E</li>
+                <li data-aos="fade-down" data-aos-delay="650">N</li>
+            </ul>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path class="svgfill" fill-opacity="1"
                 d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,165.3C960,149,1056,75,1152,48C1248,21,1344,43,1392,53.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
         <div id="mode" class="switch-button light"><i id="light" class="fas fa-moon"></i></div>
+        <div id="dark-mode-text" class="dark-mode-text">Click here for dark mode!<i class="fas fa-chevron-right"></i>
+        </div>
     </section>
     <section class="about-section">
         <div class="blockcentre">
@@ -150,6 +167,7 @@
                         <li style="background: #FF6600;">HTML5</li>
                         <li style="background: #264EE4;">CSS3</li>
                         <li style="background: #00628B;">MySQL</li>
+                        <li style="background: #7377AD;">PHP</li>
                     </ul>
                     <p>This is a project we had to do for the web development course. This site represents a
                         crowdfunding
