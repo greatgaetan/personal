@@ -9,7 +9,8 @@
 body {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  background: #f9f9f9;
+  background: #1b1e1f;
+  color: white;
 }
 
 svg {
@@ -17,16 +18,12 @@ svg {
   bottom: 0;
 }
 
-p {
-  text-align: justify;
-}
-
 a {
   color: #3391ff;
 }
 
 .svgfill {
-  fill: #f9f9f9;
+  fill: #1b1e1f;
 }
 
 .switch-button {
@@ -44,6 +41,10 @@ a {
   border: 2px solid #00bb9c;
   overflow: hidden;
   cursor: pointer;
+}
+
+p {
+  text-align: justify;
 }
 
 footer {
@@ -201,7 +202,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-bottom: 50px;
-  background: #f1f1f1;
+  background: rgb(32, 35, 36);
   border-radius: 20px;
   justify-items: center;
   align-items: center;
