@@ -15,12 +15,10 @@
     $(document).ready(function () {
         $('#mode').click(function () {
             if ($('link#styles').attr('href') == "css/main.css") {
-                $('#mode').attr('value', 'LIGHT')
                 $('link#styles').attr('href', 'css/dark.css')
                 $('#light').attr('class', "fas fa-sun")
             }
             else {
-                $('#mode').attr('value', 'DARK')
                 $('link#styles').attr('href', 'css/main.css')
                 $('#light').attr('class', "fas fa-moon")
             }
