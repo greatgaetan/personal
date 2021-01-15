@@ -10,6 +10,7 @@ body {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   background: #f9f9f9;
+  transition: background .5s ease;
 }
 
 svg {
@@ -28,6 +29,7 @@ a {
 
 .svgfill {
   fill: #f9f9f9;
+  transition: all .5s ease;
 }
 
 .switch-button {
@@ -202,12 +204,20 @@ footer {
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
   margin-bottom: 50px;
-  background: #f1f1f1;
   border-radius: 20px;
   justify-items: center;
   align-items: center;
+}
+
+.card-bg {
+  background: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
 }
 
 .card ul {

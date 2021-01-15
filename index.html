@@ -14,13 +14,26 @@
 <script>
     $(document).ready(function () {
         $('#mode').click(function () {
-            if ($('link#styles').attr('href') == "css/main.css") {
+            /*if ($('link#styles').attr('href') == "css/main.css") {
                 $('link#styles').attr('href', 'css/dark.css')
                 $('#light').attr('class', "fas fa-sun")
             }
             else {
                 $('link#styles').attr('href', 'css/main.css')
                 $('#light').attr('class', "fas fa-moon")
+            }*/
+            if ($('#mode').attr('class') == "switch-button light") {
+                $('#mode').attr('class', "switch-button dark");
+                $("body").css('color', 'white');
+                $("body").css('background', '#1b1e1f');
+                $(".card-bg").css('background', "rgb(32, 35, 36)");
+                $('.svgfill').css('fill', '#1b1e1f');
+            } else if ($('#mode').attr('class') == "switch-button dark") {
+                $('#mode').attr('class', "switch-button light");
+                $("body").css('color', 'black');
+                $("body").css('background', '#f9f9f9');
+                $(".card-bg").css('background', "#f1f1f1");
+                $('.svgfill').css('fill', '#f9f9f9');
             }
         })
     });
@@ -49,7 +62,7 @@
                 d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,165.3C960,149,1056,75,1152,48C1248,21,1344,43,1392,53.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
-        <div id="mode" class="switch-button"><i id="light" class="fas fa-moon"></i></div>
+        <div id="mode" class="switch-button light"><i id="light" class="fas fa-moon"></i></div>
     </section>
     <section class="about-section">
         <div class="blockcentre">
@@ -105,59 +118,77 @@
     <section class="projects-section blockcentre">
         <div class="projects-title" data-aos="fade-left">My projects</div>
         <div class="card" data-aos="fade-right">
-            <img src="img/projects/helmoapp.png" style="width: 200px; height: 200px;">
-            <div>
-                <h1>HELMo App</h1>
-                <ul>
-                    <li style="background: #0385D2;">Typescript</li>
-                    <li style="background: #26D9FD;">React Native</li>
-                    <li style="background: #191936;">Expo</li>
-                </ul>
-                <p>This is an application made for the students of the "HELMo" school that allows you to have
-                    information
-                    about your schedule, emails, courses, etc. It is one of the projects carried out during the
-                    <a href="https://www.salto.helmo.be/CMS/">SALTO</a>
-                    course. This "course" consists of giving HELMo students concrete projects in order to gain
-                    experience during their school learning.
-                </p>
+            <div class="card-bg">
+                <img src="img/projects/helmoapp.png" style="width: 200px; height: 200px;">
+            </div>
+            <div class="card-bg">
+                <div>
+                    <h1>HELMo App</h1>
+                    <ul>
+                        <li style="background: #0385D2;">Typescript</li>
+                        <li style="background: #26D9FD;">React Native</li>
+                        <li style="background: #191936;">Expo</li>
+                    </ul>
+                    <p>This is an application made for the students of the "HELMo" school that allows you to have
+                        information
+                        about your schedule, emails, courses, etc. It is one of the projects carried out during the
+                        <a href="https://www.salto.helmo.be/CMS/">SALTO</a>
+                        course. This "course" consists of giving HELMo students concrete projects in order to gain
+                        experience during their school learning.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="card" data-aos="fade-left">
-            <img src="img/projects/collector.png" style="width: 200px; height: 200px;">
-            <div>
-                <h1>Collect'Or</h1>
-                <ul>
-                    <li style="background: #FF6600;">HTML5</li>
-                    <li style="background: #264EE4;">CSS3</li>
-                    <li style="background: #00628B;">MySQL</li>
-                </ul>
-                <p>This is a project we had to do for the web development course. This site represents a crowdfunding
-                    platform where anyone can come and create a project. People can donate money, with possible
-                    rewards for certain levels of donations.</p>
+            <div class="card-bg">
+                <img src="img/projects/collector.png" style="width: 200px; height: 200px;">
+            </div>
+            <div class="card-bg">
+                <div>
+                    <h1>Collect'Or</h1>
+                    <ul>
+                        <li style="background: #FF6600;">HTML5</li>
+                        <li style="background: #264EE4;">CSS3</li>
+                        <li style="background: #00628B;">MySQL</li>
+                    </ul>
+                    <p>This is a project we had to do for the web development course. This site represents a
+                        crowdfunding
+                        platform where anyone can come and create a project. People can donate money, with possible
+                        rewards for certain levels of donations.</p>
+                </div>
             </div>
         </div>
         <div class="card" data-aos="fade-right">
-            <img src="img/projects/gamebook-java.png" style="width: 200px; height: 200px;">
-            <div>
-                <h1>GameBook (Creator)</h1>
-                <ul>
-                    <li style="background: #E6332D;">Java</li>
-                    <li style="background: #52839F;">JavaFX</li>
-                </ul>
-                <p>This is an application that allows the user to create a gamebook. There is a second part to this
-                    application that manages the reading of this game-book that we create.</p>
+            <div class="card-bg">
+                <img src="img/projects/gamebook-java.png" style="width: 200px; height: 200px;">
+            </div>
+            <div class="card-bg">
+                <div>
+                    <h1>GameBook (Creator)</h1>
+                    <ul>
+                        <li style="background: #E6332D;">Java</li>
+                        <li style="background: #52839F;">JavaFX</li>
+                    </ul>
+                    <p>This is an application that allows the user to create a gamebook. There is a second part to this
+                        application that manages the reading of this game-book that we create.</p>
+                </div>
             </div>
         </div>
         <div class="card" data-aos="fade-left">
-            <img src="img/projects/gamebook-csharp.png" style="width: 200px; height: 200px;">
-            <div>
-                <h1>GameBook (Reader)</h1>
-                <ul>
-                    <li style="background: #1E9E25;">C#</li>
-                    <li style="background: #6D409D;">.NET core</li>
-                </ul>
-                <p>This is the second part of the "GameBook" application. It manages the reading and allows you to save
-                    your session so that you can come back later and continue reading where you left off before.</p>
+            <div class="card-bg">
+                <img src="img/projects/gamebook-csharp.png" style="width: 200px; height: 200px;">
+            </div>
+            <div class="card-bg">
+                <div>
+                    <h1>GameBook (Reader)</h1>
+                    <ul>
+                        <li style="background: #1E9E25;">C#</li>
+                        <li style="background: #6D409D;">.NET core</li>
+                    </ul>
+                    <p>This is the second part of the "GameBook" application. It manages the reading and allows you to
+                        save
+                        your session so that you can come back later and continue reading where you left off before.</p>
+                </div>
             </div>
         </div>
     </section>
