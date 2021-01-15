@@ -14,7 +14,8 @@ body {
 
 svg {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  overflow: hidden;
 }
 
 p {
@@ -65,6 +66,7 @@ footer {
   background: #00CBA9;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 } 
 
 .centvh ul {
@@ -125,6 +127,7 @@ footer {
 .green-section {
   position: relative;
   background: #00CBA9;
+  overflow: hidden;
 }
 
 .about-section img {
