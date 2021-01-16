@@ -301,6 +301,7 @@ footer {
   color: white;
   font-size: 1rem;
   padding: 0 10px;
+  transition: all 1s ease;
 }
 
 .card:hover {
