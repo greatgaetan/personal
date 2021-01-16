@@ -367,4 +367,12 @@ footer {
     margin: 0 auto;
     letter-spacing: 0;
   }
+
+  .light:hover {
+    box-shadow: none;
+  }
+  
+  .dark:hover {
+    box-shadow: none;
+  }
 }
