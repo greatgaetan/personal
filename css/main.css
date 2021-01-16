@@ -20,6 +20,7 @@ svg {
   position: absolute;
   bottom: -1px;
   overflow: hidden;
+  width: 101%;
 }
 
 p {
