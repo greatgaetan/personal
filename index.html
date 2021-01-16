@@ -9,19 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d9e72c478.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/timeline.js"></script>
+    <link href="css/timeline.min.css" rel="stylesheet"/>
     <title>Gaëtan Didderen</title>
 </head>
 <script>
     $(document).ready(function () {
         $('#mode').click(function () {
-            /*if ($('link#styles').attr('href') == "css/main.css") {
-                $('link#styles').attr('href', 'css/dark.css')
-                $('#light').attr('class', "fas fa-sun")
-            }
-            else {
-                $('link#styles').attr('href', 'css/main.css')
-                $('#light').attr('class', "fas fa-moon")
-            }*/
             if ($('#mode').attr('class') == "switch-button light") {
                 $('#mode').attr('class', "switch-button dark");
                 $("body").css('color', 'white');
@@ -124,6 +118,7 @@
         <div class="blockcentre">
             <div class="education-section">
                 <div class="education-title" data-aos="fade-left">Education</div>
+                <div class="skill"><img src="img/skills/net_core.png" style="width: 80px; height: 80px;">.NET core</div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -220,5 +215,8 @@
         duration: 800 // values from 0 to 3000, with step 50ms
     });
 </script>
-
+<script>
+    timeline(document.querySelectorAll('.timeline'));
+    jQuery('.timeline').timeline();
+</script>
 </html>

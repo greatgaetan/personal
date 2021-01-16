@@ -175,6 +175,26 @@ footer {
   overflow: hidden;
 }
 
+.date-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-line:before, .date-line:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+
+.date-line:before {
+  margin-right: 10px
+}
+
+.date-line:after {
+  margin-left: 10px
+}
+
 .about-section img {
   width: 200px;
   height: 200px;
@@ -225,7 +245,8 @@ footer {
 .education-section {
   position: relative;
   color: white;
-  height: 500px;
+  overflow: hidden;
+  height: 800px;
 }
 
 .education-title {
@@ -234,6 +255,10 @@ footer {
   margin: 0 0 0 50px;
   font-weight: 800;
   z-index: 10;
+}
+
+.timeline div {
+  overflow: hidden;
 }
 
 .projects-title {
@@ -289,6 +314,21 @@ footer {
 .card > div {
   padding: 2rem;
 }
+
+.skill {
+  color: transparent;
+  padding: 50px;
+  transition: all 1s ease;
+}
+
+.skill:hover {
+  color: white;
+}
+
+.skill:hover img {
+  transform: skewX(10deg);
+}
+
 
 @media (max-width: 900px) {
   .name {
@@ -372,5 +412,10 @@ footer {
   
   .dark:hover {
     box-shadow: none;
+  }
+
+  .date-line {
+    width: 90%;
+    margin: 0 auto;
   }
 }
