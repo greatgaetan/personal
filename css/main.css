@@ -6,6 +6,9 @@
   overflow-x: hidden;
 }
 
+element {
+}
+
 body {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -47,6 +50,17 @@ a {
   border: 2px solid #00bb9c;
   overflow: hidden;
   cursor: pointer;
+  transition: box-shadow 1s ease;
+}
+
+.light:hover {
+  --hover-switch-color: #000;
+  box-shadow: 0 0 10px var(--hover-switch-color), 0 0 20px var(--hover-switch-color), 0 0 50px var(--hover-switch-color);
+}
+
+.dark:hover {
+  --hover-switch-color: #fff;
+  box-shadow: 0 0 10px var(--hover-switch-color), 0 0 20px var(--hover-switch-color), 0 0 50px var(--hover-switch-color);
 }
 
 .dark-mode-text {
@@ -83,7 +97,7 @@ a {
 footer {
   color: white;
   height: 100px;
-  background: #00bb9c;
+  background: #00CBA9;
 }
 
 .blockcentre {
