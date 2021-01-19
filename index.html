@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="styles" rel="stylesheet" href="css/main.css">
+    <link id="styles" rel="stylesheet" href="css/modal.css">
+    <link id="styles" rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d9e72c478.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/timeline.js"></script>
-    <link href="css/timeline.min.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <title>Gaëtan Didderen</title>
 </head>
 <script>
@@ -22,6 +24,9 @@
                 $("body").css('background', '#1b1e1f');
                 $(".card-bg").css('background', "rgb(32, 35, 36)");
                 $('.svgfill').css('fill', '#1b1e1f');
+                $('.modal__container').css('background-color', '#1b1e1f');
+                $('.modal__close').css('color', 'white');
+                $('.modal__footer').css('color', 'white');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
             } else if ($('#mode').attr('class') == "switch-button dark") {
                 $('#mode').attr('class', "switch-button light");
@@ -29,9 +34,17 @@
                 $("body").css('background', '#f9f9f9');
                 $(".card-bg").css('background', "#f1f1f1");
                 $('.svgfill').css('fill', '#f9f9f9');
+                $('.modal__container').css('background-color', '#f9f9f9');
+                $('.modal__close').css('color', 'black');
+                $('.modal__footer').css('color', 'black');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
             }
         })
+    });
+</script>
+<script>
+    MicroModal.init({
+        awaitCloseAnimation: true
     });
 </script>
 <script>
@@ -75,6 +88,8 @@
         <div id="dark-mode-text" class="dark-mode-text">Click here for dark mode!<i class="fas fa-chevron-right"></i>
         </div>
     </section>
+
+    <!-- ABOUT ME SECTION -->
     <section class="about-section">
         <div class="blockcentre">
             <div class="about-title" data-aos="fade-left">About me</div>
@@ -126,6 +141,8 @@
             </path>
         </svg>
     </section>
+
+    <!-- PROJECTS SECTION-->
     <section class="projects-section blockcentre">
         <div class="projects-title" data-aos="fade-left">My projects</div>
         <div class="card" data-aos="fade-right">
@@ -150,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-aos="fade-left">
+        <div class="card" data-aos="fade-left" onclick="openModal('modal-collector')">
             <div class="card-bg">
                 <img src="img/projects/collector.png" style="width: 200px; height: 200px;">
             </div>
@@ -204,18 +221,87 @@
             </div>
         </div>
     </section>
-    <footer class="center">
+    <footer class="center copyrights">
         Designed and owned by Gaëtan Didderen.
     </footer>
+
+    <!-- COLLECTOR MODAL -->
+    <div class="modal micromodal-slide" id="modal-collector" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                  Collect'Or
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+              </header>
+            <main class="modal__content" id="modal-1-content">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img/projects/collector-slide1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img/projects/collector-slide2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img/projects/collector-slide3.png" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+            </main>
+            <footer class="modal__footer center">
+                (The data displayed on the site are false and are only there for the presentation of the site)
+            </footer>
+          </div>
+        </div>
+      </div>
 </body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init({
         duration: 800 // values from 0 to 3000, with step 50ms
     });
 </script>
 <script>
-    timeline(document.querySelectorAll('.timeline'));
-    jQuery('.timeline').timeline();
+    function openModal(text) {
+        MicroModal.show(text);
+    }
 </script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>  
 </html>

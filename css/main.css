@@ -92,7 +92,7 @@ a {
   width: 100%;
 }
 
-footer {
+.copyrights {
   color: white;
   height: 100px;
   background: #00CBA9;
@@ -113,6 +113,12 @@ footer {
   align-items: center;
   overflow: hidden;
 } 
+
+.centvh span {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+}
 
 .centvh ul {
   color: white;
@@ -305,6 +311,7 @@ footer {
 }
 
 .card:hover {
+  cursor: pointer;
   transform: scale(.97) !important;
 }
 
@@ -329,7 +336,6 @@ footer {
 .skill:hover img {
   transform: skewX(10deg);
 }
-
 
 @media (max-width: 900px) {
   .name {
