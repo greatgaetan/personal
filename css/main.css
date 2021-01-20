@@ -162,6 +162,10 @@ a {
   align-items: center;
 }
 
+.right {
+  float: right;
+}
+
 .space-between {
   justify-content: space-between;  
 }
@@ -281,6 +285,7 @@ a {
   border-radius: 20px;
   justify-items: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .card-bg {
@@ -310,8 +315,11 @@ a {
 }
 
 .card:hover {
-  cursor: pointer;
-  transform: scale(.97) !important;
+  transform: scale(.99) !important;
+}
+
+.card:hover .click-details {
+  opacity: .1;
 }
 
 .card li:hover {
@@ -320,6 +328,60 @@ a {
 
 .card > div {
   padding: 2rem;
+}
+
+.click-details {
+  opacity: 0;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s;
+}
+
+.click-details-button {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  opacity: .7;
+  font-size: .7rem;
+  margin-top: 20px;
+}
+
+.click-details-button:before, .click-details-button:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0px;
+  margin-top: -0.5px;
+  background: #000;
+}
+
+.click-details-button:before {
+  left: -2.5px;
+}
+
+.click-details-button:after {
+  right: 2.5px;
+  background: #000;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.click-details-button:hover {
+  cursor: pointer;
+}
+
+.click-details-button:hover:before {
+  background: #000;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.click-details-button:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 
 .skill {
