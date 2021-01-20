@@ -17,6 +17,8 @@
 </head>
 <script>
     $(document).ready(function () {
+        //Start with black color when you load the page.
+        changeBeforeAfter('#000');
         $('#mode').click(function () {
             if ($('#mode').attr('class') == "switch-button light") {
                 $('#mode').attr('class', "switch-button dark");
@@ -27,6 +29,7 @@
                 $('.modal__container').css('background-color', '#1b1e1f');
                 $('.modal__close').css('color', 'white');
                 $('.modal__footer').css('color', 'white');
+                changeBeforeAfter('#fff');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
             } else if ($('#mode').attr('class') == "switch-button dark") {
                 $('#mode').attr('class', "switch-button light");
@@ -37,11 +40,20 @@
                 $('.modal__container').css('background-color', '#f9f9f9');
                 $('.modal__close').css('color', 'black');
                 $('.modal__footer').css('color', 'black');
+                changeBeforeAfter('#000');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
             }
         })
     });
 </script>
+<script>
+    function changeBeforeAfter(color) {
+        var styleElem = document.head.appendChild(document.createElement("style"));
+        styleElem.innerHTML = ".click-details-button:hover:before {background: " + color + ";}";
+        styleElem.innerHTML = ".click-details-button:after {background: " + color + ";}";
+        styleElem.innerHTML = ".click-details-button:before, .click-details-button:after {background: " + color + ";}";
+    }
+</script> 
 <script>
     MicroModal.init({
         awaitCloseAnimation: true
@@ -370,5 +382,5 @@
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
     }
-</script>  
+</script> 
 </html>
