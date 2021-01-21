@@ -7,6 +7,7 @@
     <link id="styles" rel="stylesheet" href="css/main.css">
     <link id="styles" rel="stylesheet" href="css/modal.css">
     <link id="styles" rel="stylesheet" href="css/sliders.css">
+    <link id="styles" rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d9e72c478.js" crossorigin="anonymous"></script>
@@ -29,6 +30,8 @@
                 $('.modal__container').css('background-color', '#1b1e1f');
                 $('.modal__close').css('color', 'white');
                 $('.modal__footer').css('color', 'white');
+                $('.screen').css('background', '#3e3e3e');
+                $('.app-form-control').css('color', '#ddd');
                 changeBeforeAfter('#fff');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
             } else if ($('#mode').attr('class') == "switch-button dark") {
@@ -40,6 +43,8 @@
                 $('.modal__container').css('background-color', '#f9f9f9');
                 $('.modal__close').css('color', 'black');
                 $('.modal__footer').css('color', 'black');
+                $('.screen').css('background', '#efefef');
+                $('.app-form-control').css('color', '#000');
                 changeBeforeAfter('#000');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
             }
@@ -155,8 +160,9 @@
     </section>
 
     <!-- PROJECTS SECTION-->
-    <section class="projects-section blockcentre">
-        <div class="projects-title" data-aos="fade-left">My projects</div>
+    <section class="projects-section">
+        <div class="blockcentre">
+            <div class="projects-title" data-aos="fade-left">My projects</div>
         <div class="card" data-aos="fade-right">
             <div class="card-bg">
                 <img src="img/projects/helmoapp.png" style="width: 200px; height: 200px;">
@@ -243,6 +249,61 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#00CBA9" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,96C320,128,400,192,480,208C560,224,640,192,720,181.3C800,171,880,181,960,176C1040,171,1120,149,1200,149.3C1280,149,1360,171,1400,181.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="green-section contact-section">
+        <div class="blockcentre">
+            <div class="contact-title" data-aos="fade-left">Contact me</div>
+            <div class="background" data-aos="fade-up">
+                <div class="container">
+                  <div class="screen">
+                    <div class="screen-header">
+                      <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                      </div>
+                      <div class="screen-header-middle">
+                          <div class="center">
+                            SEND_ME_MAIL.EXE
+                          </div>
+                      </div>
+                      <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                      </div>
+                    </div>
+                    <div class="screen-body">
+                      <div class="screen-body-item">
+                        <div class="app-form">
+                          <div class="app-form-group">
+                            <input class="app-form-control" placeholder="NAME">
+                          </div>
+                          <div class="app-form-group">
+                            <input class="app-form-control" placeholder="EMAIL">
+                          </div>
+                          <div class="app-form-group">
+                            <input class="app-form-control" placeholder="CONTACT NO">
+                          </div>
+                          <div class="app-form-group message">
+                            <textarea class="app-form-control" placeholder="MESSAGE"></textarea>
+                          </div>
+                          <div class="app-form-group buttons">
+                            <button class="app-form-button">SEND</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
     <footer class="center copyrights">

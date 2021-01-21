@@ -96,11 +96,13 @@ a {
   color: white;
   height: 100px;
   background: #00CBA9;
+  margin-top: -1px;
 }
 
 .blockcentre {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .centvh {
@@ -271,11 +273,18 @@ a {
   overflow: hidden;
 }
 
+.projects-section {
+  position: relative;
+  overflow: hidden;
+  height: 1700px;
+}
+
 .projects-title {
   position: relative;
   font-size: 3rem;
   margin: 0 0 0 50px;
   font-weight: 800;
+  overflow: hidden;
 }
 
 .card {
@@ -316,6 +325,10 @@ a {
 
 .card:hover {
   transform: scale(.99) !important;
+}
+
+.card:last-child {
+  margin-bottom: 100px;
 }
 
 .card:hover .click-details {
@@ -384,6 +397,19 @@ a {
 
 .skill:hover img {
   transform: skewX(10deg);
+}
+
+.contact-section {
+  overflow: hidden;
+}
+
+.contact-title {
+  position: relative;
+  font-size: 3rem;
+  margin: 0 0 0 50px;
+  font-weight: 800;
+  overflow: hidden;
+  color: white;
 }
 
 @media (max-width: 900px) {
@@ -473,5 +499,9 @@ a {
   .date-line {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .projects-section {
+    height: 3100px;
   }
 }
