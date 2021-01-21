@@ -32,6 +32,7 @@
                 $('.modal__footer').css('color', 'white');
                 $('.screen').css('background', '#3e3e3e');
                 $('.app-form-control').css('color', '#ddd');
+                $('.cta svg').css("stroke", "white");
                 changeBeforeAfter('#fff');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
             } else if ($('#mode').attr('class') == "switch-button dark") {
@@ -45,6 +46,7 @@
                 $('.modal__footer').css('color', 'black');
                 $('.screen').css('background', '#efefef');
                 $('.app-form-control').css('color', '#000');
+                $('.cta svg').css("stroke", "#000");
                 changeBeforeAfter('#000');
                 document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
             }
