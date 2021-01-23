@@ -99,6 +99,19 @@ a {
   margin-top: -1px;
 }
 
+.copyrights code {
+    background-color: #ccc;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    margin: 0 3px;
+    transition: background-color .5s ease;
+}
+
+.copyrights code:hover {
+  background-color: #aaa;
+}
+
 .blockcentre {
   max-width: 1200px;
   margin: 0 auto;
