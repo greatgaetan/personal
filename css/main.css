@@ -76,12 +76,6 @@ a {
   margin-left: 5px;
 }
 
-.twolines {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .firstname {
   display: inline-block;
   width: 100%;
@@ -120,7 +114,7 @@ a {
   overflow: hidden;
 }
 
-.centvh {
+.home-section {
   position: relative;
   display: flex;
   width: 100%;
@@ -131,29 +125,31 @@ a {
   overflow: hidden;
 } 
 
-.centvh span {
+.home-section span {
   position: absolute;
   pointer-events: none;
   background: #fff;
 }
 
-.centvh ul {
+.home-section ul {
   color: white;
   display: flex;
   flex-direction: row;
   padding-bottom: 200px;
 }
 
-.centvh li {
+.home-section li {
   font-size: 2rem;
   font-weight: 500;
   padding: 0 10px;
   transition: .3s ease;
 }
 
-.centvh li:hover{
-  cursor: default;
-  transform: rotate(1turn) scale(1.5);
+.twolines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .space {
@@ -498,15 +494,15 @@ a {
     display: block;
   }
 
-  .centvh ul {
+  .home-section ul {
     padding: 0;
   }
 
-  .centvh li {
+  .home-section li {
     font-size: 1rem;
   }
 
-  .centvh {
+  .home-section {
     height: 80vh;
   } 
 
