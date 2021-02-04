@@ -101,7 +101,10 @@ a {
     font-family: courier, monospace;
     padding: 0 3px;
     margin: 0 3px;
+    vertical-align: middle;
     transition: background-color .5s ease;
+    font-family: "Poppins", sans-serif;
+    font-size: .8rem;
 }
 
 .copyrights code:hover {
@@ -135,7 +138,7 @@ a {
   color: white;
   display: flex;
   flex-direction: row;
-  padding-bottom: 200px;
+  padding: 100px 0 300px 0;
 }
 
 .home-section li {
@@ -524,6 +527,26 @@ a {
   .about-section p {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .about-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .education-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .projects-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-title {
+    margin: 0;
+    text-align: center;
   }
 
   .textandcv {
