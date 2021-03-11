@@ -288,6 +288,11 @@ a {
   text-align: justify;
 }
 
+.role-subtitle {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
 .timeline div {
   overflow: hidden;
 }
