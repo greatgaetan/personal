@@ -288,6 +288,12 @@ a {
   text-align: justify;
 }
 
+.role-wrapper {
+  max-width: 90%;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+
 .role-subtitle {
   font-weight: 800;
   font-size: 1.5rem;
@@ -539,11 +545,6 @@ a {
     margin: 0 auto;
   }
 
-  .education-section .role-line {
-    width: 80%;
-    margin: 0 auto 10px auto;
-  }
-
   .about-title {
     margin: 0;
     text-align: center;
@@ -613,6 +614,16 @@ a {
   }
 
   .projects-section {
-    height: 3100px;
+    height: 2700px;
+  }
+}
+
+@media (max-width: 550px) {
+  .education-section {
+    height: 1000px;
+  }
+
+  .projects-section {
+    height: 3300px;
   }
 }
