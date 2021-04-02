@@ -8,6 +8,7 @@
     <link id="styles" rel="stylesheet" href="css/modal.css">
     <link id="styles" rel="stylesheet" href="css/sliders.css">
     <link id="styles" rel="stylesheet" href="css/contact.css">
+    <link id="styles" rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d9e72c478.js" crossorigin="anonymous"></script>
@@ -77,25 +78,32 @@
 </script>
 
 <body>
+    <div class="lds-wrapper">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <section class="home-section">
         <div class="twolines">
             <ul>
-                <li data-aos="fade-down">G</li>
-                <li data-aos="fade-down" data-aos-delay="50">A</li>
-                <li data-aos="fade-down" data-aos-delay="100">Ë</li>
-                <li data-aos="fade-down" data-aos-delay="150">T</li>
-                <li data-aos="fade-down" data-aos-delay="200">A</li>
-                <li data-aos="fade-down" data-aos-delay="250" class="space">N</li>
+                <li data-aos="fade-down" data-aos-delay="1000">G</li>
+                <li data-aos="fade-down" data-aos-delay="1050">A</li>
+                <li data-aos="fade-down" data-aos-delay="1100">Ë</li>
+                <li data-aos="fade-down" data-aos-delay="1150">T</li>
+                <li data-aos="fade-down" data-aos-delay="1200">A</li>
+                <li data-aos="fade-down" data-aos-delay="1250" class="space">N</li>
             </ul>
             <ul>
-                <li data-aos="fade-down" data-aos-delay="300">D</li>
-                <li data-aos="fade-down" data-aos-delay="350">I</li>
-                <li data-aos="fade-down" data-aos-delay="400">D</li>
-                <li data-aos="fade-down" data-aos-delay="450">D</li>
-                <li data-aos="fade-down" data-aos-delay="500">E</li>
-                <li data-aos="fade-down" data-aos-delay="550">R</li>
-                <li data-aos="fade-down" data-aos-delay="600">E</li>
-                <li data-aos="fade-down" data-aos-delay="650">N</li>
+                <li data-aos="fade-down" data-aos-delay="1300">D</li>
+                <li data-aos="fade-down" data-aos-delay="1350">I</li>
+                <li data-aos="fade-down" data-aos-delay="1400">D</li>
+                <li data-aos="fade-down" data-aos-delay="1450">D</li>
+                <li data-aos="fade-down" data-aos-delay="1500">E</li>
+                <li data-aos="fade-down" data-aos-delay="1550">R</li>
+                <li data-aos="fade-down" data-aos-delay="1600">E</li>
+                <li data-aos="fade-down" data-aos-delay="1650">N</li>
             </ul>
         </div>
         <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -155,7 +163,8 @@
                 <div class="role-subtitle" data-aos="fade-up-right">
                     The problem
                 </div>
-                <div class="space-around role-line" data-aos="fade-up-right">One thing that scares me for the future of the planet is pollution.
+                <div class="space-around role-line" data-aos="fade-up-right">One thing that scares me for the future of
+                    the planet is pollution.
                     We have always heard that it is only increasing without seeing any real progress but I would really
                     like that to change and be able to contribute to a better world. Even if it will only be minimal, I
                     will try to bring as many people as possible in a movement of benevolence towards the planet.</div>
@@ -481,6 +490,21 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+</script>
+<script>
+    $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+    })
+    $(window).on("load", function () {
+        setTimeout(() => {
+            $(".lds-wrapper").fadeOut("slow");
+            $('html, body').css({
+                'overflow': 'auto',
+                'height': 'auto'
+            })
+        }, 1000);
+    });
 </script>
 
 </html>
