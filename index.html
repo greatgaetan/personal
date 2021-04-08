@@ -24,7 +24,7 @@
         changeBeforeAfter('#000');
         var mode = (localStorage.getItem('mode') !== undefined) ? localStorage.getItem('mode') : "null";
 
-        if(mode == "dark") {
+        if (mode == "dark") {
             darkMode();
         } else if (mode == "light") {
             lightMode;
@@ -136,7 +136,7 @@
     </section>
 
     <!-- ABOUT ME SECTION -->
-    <section class="about-section">
+    <section id="about-me" class="about-section">
         <div class="blockcentre">
             <div class="about-title" data-aos="fade-left">About me</div>
             <div class="about-divide space-around">
@@ -144,16 +144,16 @@
                     <p class="margin-bottom-ten" data-aos="fade-up-right">I'm a friendly and passionnated student in
                         computer science at Haute Ecole Libre Mosane (HELMo).</p>
                     <p class="margin-bottom-ten" data-aos="fade-up-right" data-aos-delay="100">
-                        Even as a student, i have some experience in the professional world due to the SALTO concept of
+                        Even as a student, I have some experience in the professional world due to the SALTO concept of
                         my
                         school. This allows us, the students, to work together on concrete projects and with real
                         clients
                         while we're still in our education career.
                     </p>
                     <p data-aos="fade-up-right" data-aos-delay="200">
-                        Moreover, during my free time, i stay curious and i like to try learning myself some
+                        Moreover, during my free time, I stay curious and I like to try learning myself some
                         technologies
-                        that interest me, more particularly in web development because i find this branch way too
+                        that interest me, more particularly in web development because I find this branch way too
                         satisfying
                         for me.
                     </p>
@@ -284,9 +284,6 @@
                         <p>This is an application that allows the user to create a gamebook. There is a second part to
                             this
                             application that manages the reading of this game-book that we create.</p>
-                        <div class="right">
-                            <div class="click-details-button">See more</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -306,9 +303,6 @@
                             save
                             your session so that you can come back later and continue reading where you left off before.
                         </p>
-                        <div class="right">
-                            <div class="click-details-button">See more</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -321,6 +315,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
+    <!--
     <section class="green-section contact-section">
         <div class="blockcentre">
             <div class="contact-title" data-aos="fade-left">Contact me</div>
@@ -376,8 +371,15 @@
             </div>
         </div>
     </section>
+    -->
     <footer class="copyrights">
-        <span>Designed and owned by Gaëtan D. (<a href="https://www.twitter.com/greatgaetan_"
+        <div class="contact-me-link">
+            <a href="mailto:gaetandidderen@gmail.com">
+                <i style="vertical-align: middle; margin-bottom: 4px;" class="fas fa-envelope"></i>
+                Contact me
+            </a>
+        </div>
+        <span>Designed and owned by Gaëtan Didderen (<a href="https://www.twitter.com/greatgaetan_"
                 style="text-decoration: none;" target="_blank"><code>@greatgaetan_</code></a>)</span>
     </footer>
 
@@ -419,7 +421,13 @@
                     </div>
                 </main>
                 <footer class="modal__footer center">
-                    (The data displayed are false and are only there for the presentation of the site)
+                    <div style="text-align: center;">
+                        <div>To learn more about this project, click <a class="clickhere"
+                                href="https://www.salto.helmo.be/CMS/index.php/projets?id=3052" target="_blank">HERE</a>
+                        </div>
+                        (The data displayed are false and are only there for the presentation of the site)
+                    </div>
+
                 </footer>
             </div>
         </div>
