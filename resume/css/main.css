@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    border: 1px solid #00CBA9;
+  }
+
+  .aside-top {
+      display: flex;
+      justify-content: space-between;
+      background: #00CBA9;
+      padding: 30px 30px 0 30px;
+      color: white;
+  }
+
+  .nested-aside {
+      font-size: 3rem;
+      display: flex;
+      margin-left: 50px;
+      font-weight: 700;
+  }
+  
+  .iam-picture {
+      display: flex;
+      flex-direction: column;
+      margin-right: -40px;
+  }
+
+  .iam-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 5px solid #00CBA9;
+}
+
+.name-jobs {
+    text-align: right;
+}
+
+.name-jobs div {
+    margin-bottom: 8px;
+}
+
+  .fakecode {
+    color: #005d4e;
+  }
+
+  .waves-svg {
+      margin-bottom: -180px;
+  }
+
+  .line {
+      opacity: 30%;
+      border-bottom: 1px solid black;
+      display: block;
+      flex-grow:1;
+      height: 1px;
+      background-color: black;
+  }
+
+  .line-title{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .title{
+    flex-grow:0;
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 6rem;
+    opacity: 30%;
+  }
+
+  .education-card {
+      display: flex;
+      justify-content: space-between;
+      max-width: 95%;
+      margin: 0 auto 50px auto;
+      font-size: 3rem;
+  }
+
+  .right-date {
+      font-size: 1.5rem;
+      margin-top: 20px;
+  }
+
+  .bold {
+      font-weight: 700;
+  }
+
+  .place {
+      font-size: 1.5rem;
+      font-style: italic;
+  }
+
+  .education-info {
+      padding: 5px 0;
+  }
+  .skill {
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 30px;
+      padding: 8px 12px;
+    }
+    
+    .skill-1 {
+        background-color: #5CB8C7;
+    }
+
+    .skill-2 {
+        background-color: #CB005F;
+    }
+
+    .skill-3 {
+        background-color: #1D4EC2;
+    }
+
+    .student-jobs {
+        max-width: 96%;
+        font-family: "Montserrat Black";
+        margin: -20px auto 0 auto;
+        text-align: right;
+        letter-spacing: 9px;
+        opacity: 30%;
+    }
