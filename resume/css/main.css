@@ -15,6 +15,21 @@
     list-style: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    text-decoration: none;
+  }
+
+  .bar-pdf {
+      display: none;
+      color: white;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #00CBA9;
+  }
+
+  .click-pdf {
+      font-weight: 800;
+      color: #005d4e;
   }
 
   body {
@@ -275,7 +290,7 @@
         }
     }
 
-    @media (max-width: 1216px) {
+    @media (max-width: 1235px) {
         .nested-aside {
             font-size: 1.8rem;
         }
@@ -298,6 +313,10 @@
     }
 
     @media (max-width: 1150px) {
+        .bar-pdf {
+            display: block;
+        }
+
         .nested-aside {
             font-size: 1.5rem;
         }
