@@ -6,13 +6,24 @@
 */
 
 @font-face {
-    font-family: "Montserrataaaaa";
-    src: url("../fonts/Montserrat-Regular.otf") format("opentype"),
+    font-family: "Montserratnormal";
+    src: url("../fonts/Montserrat-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
    }
 
    @font-face {
-    font-family: "Montserrat Black";
-    src: url("../fonts/Montserrat-Black.otf") format("opentype"),
+    font-family: "Montserratb";
+    src: url("../fonts/Montserrat-Black.otf");
+    font-style: normal;
+    font-weight: 800;
+   }
+
+   @font-face {
+    font-family: "Montserratbold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-style: bold;
+    font-weight: 600;
    }
 
 * {
@@ -54,7 +65,7 @@
 
   body {
     font-size: 2rem;
-    font-family: 'Montserrataaaaa', sans-serif;
+    font-family: 'Montserratnormal', sans-serif;
     max-width: 1920px;
     margin: 0 auto;
     border: 1px solid #00CBA9;
@@ -82,8 +93,8 @@
       display: -ms-flexbox;
       display: flex;
       margin-left: 50px;
-      font-weight: 700;
-  }
+      font-family: "Montserratbold";
+    }
   
   .iam-picture {
       display: -webkit-box;
@@ -151,7 +162,7 @@
     -webkit-box-flex:0;
         -ms-flex-positive:0;
             flex-grow:0;
-    font-family: 'Montserrat Black', sans-serif;
+    font-family: 'Montserratb', sans-serif;
     font-size: 6rem;
     opacity: 30%;
   }
@@ -160,7 +171,7 @@
     -webkit-box-flex:0;
         -ms-flex-positive:0;
             flex-grow:0;
-    font-family: 'Montserrat Black', sans-serif;
+    font-family: 'Montserratb', sans-serif;
     font-size: 3rem;
     opacity: 30%;
   }
@@ -183,7 +194,7 @@
   }
 
   .bold {
-      font-weight: 700;
+      font-family: "Montserratbold";
   }
 
   .place {
@@ -220,7 +231,7 @@
 
     .student-jobs {
         max-width: 96%;
-        font-family: "Montserrat Black";
+        font-family: "Montserratb";
         margin: -20px auto 0 auto;
         text-align: right;
         letter-spacing: 9px;
