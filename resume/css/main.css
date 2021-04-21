@@ -6,7 +6,7 @@
 */
 
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrataaaaa";
     src: url("../fonts/Montserrat-Regular.otf") format("opentype"),
    }
 
@@ -54,7 +54,7 @@
 
   body {
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrataaaaa', sans-serif;
     max-width: 1920px;
     margin: 0 auto;
     border: 1px solid #00CBA9;
