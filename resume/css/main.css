@@ -15,6 +15,10 @@
     border: 1px solid #00CBA9;
   }
 
+  .small-infos {
+      display: none;
+  }
+
   .aside-top {
       display: flex;
       justify-content: space-between;
@@ -84,7 +88,14 @@
     opacity: 30%;
   }
 
-  .education-card {
+  .little-title{
+    flex-grow:0;
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 3rem;
+    opacity: 30%;
+  }
+
+  .card {
       display: flex;
       justify-content: space-between;
       max-width: 95%;
@@ -105,6 +116,11 @@
       font-size: 1.5rem;
       font-style: italic;
   }
+
+  .employee-place {
+    font-size: 1.5rem;
+    font-style: italic;
+}
 
   .education-info {
       padding: 5px 0;
@@ -135,4 +151,347 @@
         text-align: right;
         letter-spacing: 9px;
         opacity: 30%;
+    }
+
+    .experience-info {
+        font-size: 1.5rem;
+        max-width: fit-content;
+    }
+
+    .projects-info {
+        font-size: 1.5rem;
+    }
+
+    .projects-info li {
+        margin-bottom: 15px;
+    }
+
+    .little-cards {
+        max-width: 95%;
+        margin: 0 auto;
+        font-size: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 200px;
+        grid-row-gap: 0px;
+    }
+
+    .little-card {
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    .proxy, .helmo-app { grid-area: 1 / 1 / 2 / 3; }
+    .carrefour, .what-learned { grid-area: 1 / 3 / 2 / 5; }
+
+    .colors-template {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .colors-template li {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .advanced {
+        background: #D6424C;
+    }
+
+    .intermediate {
+        background: #4858C1;
+    }
+
+    .beginner {
+        background: #50A767;
+    }
+
+      .wrapper {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+        grid-column-gap: 60px;
+        grid-row-gap:60px;
+        max-width: 95%;
+        margin: 0 auto;
+      }
+      
+      .colored-bubbles li {
+        display: inline-flex;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        padding: 10px 15px;
+      }
+
+     .language-line {
+         display: flex;
+         justify-content: space-between;
+         max-width: 500px;
+     }
+
+     @media (max-width: 1749px) {
+        .hidden {
+            display: none;
+        }
+     }
+
+     @media (max-width: 1600px) {
+         .nested-aside {
+             font-size: 2rem;
+         }
+
+         .personal-infos {
+             font-size: 1.5rem;
+         }
+
+     }
+
+     @media (max-width: 1400px) {
+        .place::before {
+            content: '\a';
+            white-space: pre;
+        }
+
+        .experience-info, .projects-info {
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 1216px) {
+        .nested-aside {
+            font-size: 1.8rem;
+        }
+
+        .personal-infos {
+            font-size: 1.3rem;
+        }
+
+        .title {
+            font-size: 5rem;
+        }
+
+        .student-jobs {
+            font-size: 1.5rem;
+        }
+
+        .colored-bubbles li {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .nested-aside {
+            font-size: 1.5rem;
+        }
+
+        .nested-aside img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .personal-infos {
+            font-size: 1rem;
+        }
+
+        .little-cards {
+            font-size: 2rem;
+        }
+
+        .skill {
+            font-size: 1.2rem;
+        }
+
+        .colored-bubbles li {
+            font-size: 1.2rem;
+        }
+
+        .title {
+            font-size: 4rem;
+        }
+
+        .little-title {
+            font-size: 2.5rem;
+        }
+
+        .student-jobs {
+            font-size: 1.14rem;
+            margin: -15px auto 0 auto;
+            letter-spacing: 8px;
+        }
+        
+        .waves-svg {
+            margin-bottom: -100px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .skill {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 915px) {
+        .title {
+            font-size: 3rem;
+        }
+
+        .little-title {
+            font-size: 2rem;
+        }
+
+        .box ul {
+            font-size: 1.5rem;
+        }
+
+        .language-line {
+            font-size: 1.5rem;
+        }
+
+        .student-jobs {
+            font-size: .7rem;
+            margin: -10px auto 0 auto;
+            letter-spacing: 8px;
+        }
+
+       .projects-info, .employee-place {
+           font-size: 1rem;
+       }
+
+      .proxy .right-date, .carrefour .right-date, .proxy .experience-info, .carrefour .experience-info {
+          font-size: 1rem;
+      }
+
+      .proxy .left-info .bold, .carrefour .left-info .bold {
+          font-size: 1.3rem;
+      }
+
+      .education-title {
+          font-size: 2rem;
+      }
+
+      .education-title .place, .experience-info {
+          font-size: 1rem;
+      }
+
+      .skill {
+          margin-bottom: 20px;
+      }
+        .aside-top {
+            display:flex;
+            flex-direction: column;
+        }
+
+        .nested-aside, .personal-infos {
+            margin: 0 auto;
+        }
+
+        .personal-infos {
+            font-size: 1.5rem;
+        }
+
+        .nested-aside, .name-jobs {
+            font-size: 2rem;
+        }
+
+        .nested-aside img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .colors-template {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .first-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .colors-template li {
+            margin: 0;
+            align-items: center;
+        }
+
+        .wrapper{
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        }
+
+       .little-cards {
+           grid-column-gap: 100px;
+       }
+    }
+
+    @media (max-width: 705px) {
+        .card, .little-card {
+            flex-direction: column;
+        }
+
+        .personal-infos {
+            font-size: 1.2rem;
+        }
+
+        .waves-svg {
+            margin-bottom: -50px;
+        }
+    }
+
+    @media (max-width: 570px) {
+        .personal-infos, .colored-bubbles li {
+            font-size: 1rem;
+        }
+
+        .right-date {
+            font-size: 1.2rem;
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
+
+    @media (max-width: 485px) {
+        .nested-aside, .name-jobs {
+            font-size: 1.2rem;
+        }
+
+        .force-space:before {
+            content: '\a';
+            white-space: pre;
+        }
+
+        .big-infos {
+            display: none;
+        }
+
+        .small-infos {
+            display: block;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .colored-bubbles li {
+            font-size: .8rem;
+        }
+
+        .title {
+            font-size: 2.5rem;
+        }
+
+        .student-jobs {
+            font-size: .6rem;
+            margin: -10px auto 0 auto;
+            letter-spacing: 6px;
+        }
+
+        .little-cards {
+            grid-column-gap: 30px;
+        }
     }
