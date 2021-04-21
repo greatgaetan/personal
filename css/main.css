@@ -268,6 +268,10 @@ a {
   transition: transform .2s ease, margin-left .5s ease;
 }
 
+.website-button {
+  margin-right: 20px;
+}
+
 .education-section {
   position: relative;
   color: white;
