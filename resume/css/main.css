@@ -61,8 +61,8 @@
   }
 
   .waves-svg {
+      margin-top: -1px;
       margin-bottom: -180px;
-      bottom: -1px;
   }
 
   .line {
