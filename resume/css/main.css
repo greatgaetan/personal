@@ -84,14 +84,14 @@
 
   .title{
     flex-grow:0;
-    font-family: 'Montserrat Black', sans-serif;
+    font-weight: 800;
     font-size: 6rem;
     opacity: 30%;
   }
 
   .little-title{
     flex-grow:0;
-    font-family: 'Montserrat Black', sans-serif;
+    font-weight: 800;
     font-size: 3rem;
     opacity: 30%;
   }
@@ -147,7 +147,7 @@
 
     .student-jobs {
         max-width: 96%;
-        font-family: "Montserrat Black";
+        font-weight: 800;
         margin: -20px auto 0 auto;
         text-align: right;
         letter-spacing: 9px;
