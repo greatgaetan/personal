@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    src: url("../fonts/Montserrat-Regular.otf") format("opentype"),
    }
 
    @font-face {
     font-family: "Montserrat Black";
-    src: url("../fonts/Montserrat-Black.ttf") format("truetype"),
+    src: url("../fonts/Montserrat-Black.otf") format("opentype"),
    }
 
 * {
