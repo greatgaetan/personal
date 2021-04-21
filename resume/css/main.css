@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+   }
+
+   @font-face {
+    font-family: "Montserrat Black";
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype"),
+   }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -84,14 +94,14 @@
 
   .title{
     flex-grow:0;
-    font-weight: 800;
+    font-family: 'Montserrat Black', sans-serif;
     font-size: 6rem;
     opacity: 30%;
   }
 
   .little-title{
     flex-grow:0;
-    font-weight: 800;
+    font-family: 'Montserrat Black', sans-serif;
     font-size: 3rem;
     opacity: 30%;
   }
@@ -147,7 +157,7 @@
 
     .student-jobs {
         max-width: 96%;
-        font-weight: 800;
+        font-family: "Montserrat Black";
         margin: -20px auto 0 auto;
         text-align: right;
         letter-spacing: 9px;
