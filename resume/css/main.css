@@ -216,16 +216,9 @@
       padding: 8px 12px;
     }
     
-    .skill-1 {
-        background-color: #5CB8C7;
-    }
-
-    .skill-2 {
-        background-color: #CB005F;
-    }
-
-    .skill-3 {
-        background-color: #1D4EC2;
+    .rounded-border {
+        border: 1px solid #00CBA9;
+        color: black;
     }
 
     .student-jobs {
