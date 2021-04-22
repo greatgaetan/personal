@@ -133,7 +133,6 @@
   }
 
   .line {
-      opacity: 30%;
       border-bottom: 1px solid black;
       display: block;
       -webkit-box-flex:1;
@@ -164,8 +163,8 @@
             flex-grow:0;
     font-family: 'Montserratb', sans-serif;
     font-size: 6rem;
-    opacity: 30%;
-  }
+    color: rgba(0,0,0, .3);
+}
 
   .little-title{
     -webkit-box-flex:0;
@@ -173,7 +172,7 @@
             flex-grow:0;
     font-family: 'Montserratb', sans-serif;
     font-size: 3rem;
-    opacity: 30%;
+    color: rgba(0,0,0, .3);
   }
 
   .card {
@@ -235,7 +234,7 @@
         margin: -20px auto 0 auto;
         text-align: right;
         letter-spacing: 9px;
-        opacity: 30%;
+        color: rgba(0,0,0, .3);
     }
 
     .experience-info {
