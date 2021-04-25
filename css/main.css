@@ -29,6 +29,14 @@ a {
   color: #3391ff;
 }
 
+.rtl {
+  direction: rtl;
+}
+
+.rtl p {
+  text-align: left;
+}
+
 .svgfill {
   fill: #f9f9f9;
   transition: all .5s ease;
