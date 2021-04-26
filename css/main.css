@@ -33,6 +33,14 @@ a {
   direction: rtl;
 }
 
+.rtl .card-bg {
+  text-align: left;
+}
+
+.rtl ul {
+  direction: ltr;
+}
+
 .rtl p {
   text-align: left;
 }
