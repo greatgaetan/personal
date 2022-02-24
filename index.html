@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT Analyst - Developer | Welcome to my website, here you can discover more about me and some projects that I've done!">
+    <meta name="description"
+        content="IT Analyst - Developer | Welcome to my website, here you can discover more about me and some projects that I've done!">
     <link id="styles" rel="stylesheet" href="css/main.css">
     <link id="styles" rel="stylesheet" href="css/modal.css">
     <link id="styles" rel="stylesheet" href="css/sliders.css">
@@ -15,90 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d9e72c478.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script defer src="./index.js"></script>
+    <script src="./profile.js" async defer type="text/javascript"></script>
     <title>Gaëtan Didderen</title>
 </head>
-<script>
-    $(document).ready(function () {
-        //Start with black color when you load the page.
-        changeBeforeAfter('#000');
-        var mode = (localStorage.getItem('mode') !== undefined) ? localStorage.getItem('mode') : "null";
-
-        if (mode == "dark") {
-            darkMode();
-        } else if (mode == "light") {
-            lightMode;
-        }
-
-        $('#mode').click(function () {
-            if ($('#mode').attr('class') == "switch-button light") {
-                darkMode();
-            } else if ($('#mode').attr('class') == "switch-button dark") {
-                lightMode();
-            }
-        })
-        function darkMode() {
-            localStorage.setItem("mode", "dark");
-            $('#mode').attr('class', "switch-button dark");
-            $("body").css('color', 'white');
-            $("body").css('background', '#1e1e1e');
-            $(".card-bg").css('background', "rgb(32, 35, 36)");
-            $('.svgfill').css('fill', '#1e1e1e');
-            $('.modal__container').css('background-color', '#1e1e1e');
-            $('.modal__close').css('color', 'white');
-            $('.modal__footer').css('color', 'white');
-            $('.screen').css('background', '#3e3e3e');
-            $('.app-form-control').css('color', '#ddd');
-            $('.cta svg').css("stroke", "white");
-            changeBeforeAfter('#fff');
-            document.getElementById("dark-mode-text").innerHTML = "Click here for light mode!<i class=\"fas fa-chevron-right\">";
-        }
-
-        function lightMode() {
-            localStorage.setItem("mode", "light");
-            $('#mode').attr('class', "switch-button light");
-            $("body").css('color', 'black');
-            $("body").css('background', '#f9f9f9');
-            $(".card-bg").css('background', "#f1f1f1");
-            $('.svgfill').css('fill', '#f9f9f9');
-            $('.modal__container').css('background-color', '#f9f9f9');
-            $('.modal__close').css('color', 'black');
-            $('.modal__footer').css('color', 'black');
-            $('.screen').css('background', '#efefef');
-            $('.app-form-control').css('color', '#000');
-            $('.cta svg').css("stroke", "#000");
-            changeBeforeAfter('#000');
-            document.getElementById("dark-mode-text").innerHTML = "Click here for dark mode!<i class=\"fas fa-chevron-right\">";
-
-        }
-    });
-</script>
-<script>
-    function changeBeforeAfter(color) {
-        var styleElem = document.head.appendChild(document.createElement("style"));
-        styleElem.innerHTML = ".click-details-button:hover:before {background: " + color + ";}";
-        styleElem.innerHTML = ".click-details-button:after {background: " + color + ";}";
-        styleElem.innerHTML = ".click-details-button:before, .click-details-button:after {background: " + color + ";}";
-    }
-</script>
-<script>
-    MicroModal.init({
-        awaitCloseAnimation: true
-    });
-</script>
-<script>
-    window.onscroll = function () {
-        if (window.scrollY > 1) {
-            $(".dark-mode-text").css('opacity', '0');
-        } else {
-            $(".dark-mode-text").css('opacity', '1');
-        }
-    }
-</script>
 
 <body>
     <div class="lds-wrapper">
@@ -162,8 +88,8 @@
                         for me.
                     </p>
                     <div class="center">
-                        <a href="https://www.greatgaetan.com/resume/" target="_blank" class="cv-button website-button" data-aos="fade-left"
-                            data-aos-delay="300">Resume (Website)</a>
+                        <a href="https://www.greatgaetan.com/resume/" target="_blank" class="cv-button website-button"
+                            data-aos="fade-left" data-aos-delay="300">Resume (Website)</a>
                         <a href="files/gaetan-resume.pdf" class="cv-button" download data-aos="fade-left"
                             data-aos-delay="300">Resume (Download)<i class="fas fa-download"></i></a>
                     </div>
@@ -184,38 +110,17 @@
     <section class="green-section">
         <div class="blockcentre">
             <div class="education-section">
-                <div class="education-title" data-aos="fade-left">My role in the new society</div>
-                <div class="role-wrapper">
-                    <div class="role-subtitle" data-aos="fade-up-right">
-                        The problem
-                    </div>
-                    <div class="space-around" data-aos="fade-up-right">One thing that scares me for the future of
-                        the planet is pollution.
-                        We have always heard that it is only increasing without seeing any real progress but I would
-                        really
-                        like that to change and be able to contribute to a better world. Even if it will only be
-                        minimal, I
-                        will try to bring as many people as possible in a movement of benevolence towards the planet.
-                    </div>
-                    <div class="role-subtitle" data-aos="fade-up-right" style="margin-top: 20px;">
-                        How can I help?
-                    </div>
-                    <div class="space-around" data-aos="fade-up-right" style="margin-bottom: 10px;">
-                        One of the goals in my career would be to make an application that would help the world with the
-                        pollution problem. Maybe an application to help recycle, to share things we don't use often
-                        (sharing
-                        economy), to organize groups of people to clean a city, etc.
-                    </div>
-                    <div class="space-around" data-aos="fade-up-right">
-                        If I had to choose between being the head of one of the biggest companies in the world or being
-                        able
-                        to help the earth from the small person that I am and my work, of course I would take the 2nd
-                        option. And I hope that the people I will collaborate with will understand this point of view
-                        and
-                        will also be able to help the earth in their own way.
+                <div class="linkedInContainer">
+                    <div class="education-title" data-aos="fade-left">Want to know even more ?</div>
+                    <div data-aos="zoom-up" data-aos-delay="200" class="badge-base LI-profile-badge" data-locale="fr_FR"
+                        data-size="large" data-theme="light" data-type="HORIZONTAL"
+                        data-vanity="gaëtan-didderen-5a3a29212" data-version="v1"><a
+                            class="badge-base__link LI-simple-link"
+                            href="https://fr.linkedin.com/in/ga%C3%ABtan-didderen-5a3a29212?trk=profile-badge"></a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path class="svgfill" fill-opacity="1"
@@ -223,11 +128,36 @@
             </path>
         </svg>
     </section>
-
     <!-- PROJECTS SECTION-->
     <section class="projects-section">
         <div class="blockcentre">
             <div class="projects-title" data-aos="fade-left">My projects</div>
+            <div class="card rtl" data-aos="fade-left">
+                <div class="card-bg">
+                    <img src="img/projects/kento.png" style="width: 200px; height: 200px;">
+                </div>
+                <div class="card-bg">
+                    <div>
+                        <h1>KentoLady</h1>
+                        <ul>
+                            <li style="background: #0385D2;">Typescript</li>
+                            <li style="background: #26D9FD;">React Native</li>
+                            <li style="background: #191936;">Expo</li>
+                        </ul>
+                        <p>
+                            This application is still in development. It's one of the projects carried out during the
+                            <a href="https://www.salto.helmo.be/CMS/">SALTO</a> course. The goal of this app is to
+                            provide
+                            to the users an access to their dress on their phone. By stocking their clothes on the app,
+                            they
+                            can have some advices on how to make a good outfit
+                        </p>
+                        <div class="right">
+                            <div class="click-details-button" onclick="openModal('modal-kentolady', 7)">See more</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="card" data-aos="fade-right">
                 <div class="card-bg">
                     <img src="img/projects/helmoapp.png" style="width: 200px; height: 200px;">
@@ -428,10 +358,12 @@
                 </main>
                 <footer class="modal__footer center">
                     <div style="text-align: center;">
-                        <div>To learn more about this project, click <a class="clickhere"
-                                href="https://www.salto.helmo.be/CMS/index.php/projets?id=3052" target="_blank">HERE</a>
+                        <div>Available on <a class="clickhere"
+                                href="https://apps.apple.com/be/app/helmo-app/id1520392439?l=fr" target="_blank">App Store</a>
+                            and <a class="clickhere" href="https://play.google.com/store/apps/details?id=com.helmosalto.helmoapp&hl=en&gl=US"
+                                target="_blank">Play Store</a>
                         </div>
-                        (The data displayed are false and are only there for the presentation of the site)
+                        (The data displayed isn't real)
                     </div>
 
                 </footer>
@@ -474,68 +406,55 @@
                     </div>
                 </main>
                 <footer class="modal__footer center">
-                    (The data displayed are false and are only there for the presentation of the site)
+                    (The data displayed isn't real)
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- KENTOLADY MODAL -->
+    <div class="modal micromodal-slide" id="modal-kentolady" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">
+                        KentoLady
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="text-align: center;">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="img/projects/kentolady-slide1.png"
+                                style="height:400px; width: auto; text-align: center;">
+                        </div>
+                        <div class="mySlides fade" style="text-align: center;">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="img/projects/kentolady-slide2.png"
+                                style="height:400px; width: auto; text-align: center;">
+                        </div>
+                        <div class="mySlides fade" style="text-align: center;">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="img/projects/kentolady-slide3.png"
+                                style="height:400px; width: auto; text-align: center;">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                    </div>
+                </main>
+                <footer class="modal__footer center">
+                    (The data displayed isn't real)
                 </footer>
             </div>
         </div>
     </div>
 </body>
-<script>
-    AOS.init({
-        duration: 800 // values from 0 to 3000, with step 50ms
-    });
-</script>
-<script>
-    function openModal(text, num) {
-        MicroModal.show(text);
-        slideAt(num);
-    }
-</script>
-<script>
-    var slideIndex = 1;
-    var borneMin, borneMax;
-
-    function slideAt(num) {
-        slideIndex = num;
-        borneMin = num;
-        borneMax = num + 2;
-        showSlides(slideIndex);
-    }
-
-    function plusSlides(n) {
-        if ((slideIndex + n) < borneMin) {
-            showSlides(slideIndex = borneMax);
-        } else if (((slideIndex + n)) > borneMax) {
-            showSlides(slideIndex = borneMin);
-        } else {
-            showSlides(slideIndex += n);
-        }
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>
-<script>
-    $(window).on("load", function () {
-        $(".lds-wrapper").fadeOut("slow");
-    });
-</script>
 
 </html>
