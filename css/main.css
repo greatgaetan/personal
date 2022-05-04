@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,9 +11,15 @@
 
 body {
   font-size: 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Raleway", sans-serif;
   background: #f9f9f9;
-  transition: background .5s ease;
+  transition: background 0.5s ease;
+}
+
+.linkedInContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .waves-svg {
@@ -47,7 +55,7 @@ a {
 
 .svgfill {
   fill: #f9f9f9;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .switch-button {
@@ -86,7 +94,7 @@ a {
   bottom: 63px;
   right: 110px;
   z-index: 100;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .dark-mode-text i {
@@ -106,21 +114,21 @@ a {
 .copyrights {
   color: white;
   height: 100px;
-  background: #00CBA9;
+  background: #00cba9;
   margin-top: -1px;
   text-align: center;
 }
 
 .copyrights code {
-    background-color: #ccc;
-    border-radius: 3px;
-    font-family: courier, monospace;
-    padding: 0 3px;
-    margin: 0 3px;
-    vertical-align: middle;
-    transition: background-color .5s ease;
-    font-family: "Poppins", sans-serif;
-    font-size: .8rem;
+  background-color: #ccc;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  margin: 0 3px;
+  vertical-align: middle;
+  transition: background-color 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
 
 .copyrights code:hover {
@@ -138,11 +146,11 @@ a {
   display: flex;
   width: 100%;
   height: 120vh;
-  background: #00CBA9;
+  background: #00cba9;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-} 
+}
 
 .home-section span {
   position: absolute;
@@ -161,7 +169,7 @@ a {
   font-size: 2rem;
   font-weight: 500;
   padding: 0 10px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .twolines {
@@ -199,7 +207,7 @@ a {
 }
 
 .space-between {
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .space-around {
@@ -213,7 +221,7 @@ a {
 
 .green-section {
   position: relative;
-  background: #00CBA9;
+  background: #00cba9;
   overflow: hidden;
 }
 
@@ -222,7 +230,8 @@ a {
   flex-direction: row;
 }
 
-.date-line:before, .date-line:after{
+.date-line:before,
+.date-line:after {
   content: "";
   flex: 1 1;
   border-bottom: 1px solid white;
@@ -230,11 +239,11 @@ a {
 }
 
 .date-line:before {
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .date-line:after {
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .about-section img {
@@ -242,7 +251,7 @@ a {
   height: 200px;
   border-radius: 50%;
   padding: 3px;
-  border: 5px solid #00CBA9;
+  border: 5px solid #00cba9;
 }
 
 .textandcv {
@@ -255,20 +264,20 @@ a {
 }
 
 .cv-button {
-  display:inline-block;
-  padding:0.3em 1.2em;
+  display: inline-block;
+  padding: 0.3em 1.2em;
   margin: 10px 0;
-  border-radius:2em;
-  text-decoration:none;
-  font-weight:300;
-  color:#FFFFFF;
-  background-color:#00CBA9;
-  text-align:center;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #00cba9;
+  text-align: center;
   transition: all 0.2s;
 }
 
-.cv-button:hover{
-  background-color:#00bb9c;
+.cv-button:hover {
+  background-color: #00bb9c;
   cursor: pointer;
 }
 
@@ -281,7 +290,7 @@ a {
   transform: scale(0);
   overflow: hidden;
   margin-left: -15px;
-  transition: transform .2s ease, margin-left .5s ease;
+  transition: transform 0.2s ease, margin-left 0.5s ease;
 }
 
 .website-button {
@@ -292,15 +301,15 @@ a {
   position: relative;
   color: white;
   overflow: hidden;
-  height: 800px;
+  height: 700px;
 }
 
 .education-title {
-  position: relative;
   font-size: 3rem;
-  margin: 0 0 0 50px;
   font-weight: 800;
   z-index: 10;
+  margin: 0 0 40px 0;
+  text-align: center;
 }
 
 .role-line {
@@ -326,7 +335,7 @@ a {
 .projects-section {
   position: relative;
   overflow: hidden;
-  height: 1700px;
+  height: 1900px;
 }
 
 .projects-title {
@@ -354,7 +363,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .card ul {
@@ -374,7 +383,7 @@ a {
 }
 
 .card:hover {
-  transform: scale(.99) !important;
+  transform: scale(0.99) !important;
 }
 
 .card:last-child {
@@ -382,7 +391,7 @@ a {
 }
 
 .card:hover .click-details {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .card li:hover {
@@ -397,13 +406,14 @@ a {
   position: relative;
   display: block;
   cursor: pointer;
-  opacity: .7;
-  font-size: .7rem;
+  opacity: 0.7;
+  font-size: 0.7rem;
   margin-top: 20px;
 }
 
-.click-details-button:before, .click-details-button:after {
-  content: '';
+.click-details-button:before,
+.click-details-button:after {
+  content: "";
   position: absolute;
   width: 0%;
   height: 1px;
@@ -534,6 +544,9 @@ a {
 }
 
 @media (max-width: 900px) {
+  * {
+    line-height: 1.5;
+  }
   .name {
     font-size: 2rem;
   }
@@ -552,7 +565,7 @@ a {
 
   .home-section {
     height: 80vh;
-  } 
+  }
 
   .card {
     width: 80%;
@@ -566,7 +579,7 @@ a {
   }
 
   .card li {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .about-section p {
@@ -575,11 +588,6 @@ a {
   }
 
   .about-title {
-    margin: 0;
-    text-align: center;
-  }
-
-  .education-title {
     margin: 0;
     text-align: center;
   }
@@ -595,7 +603,7 @@ a {
   }
 
   .textandcv {
-    width: 100%
+    width: 100%;
   }
 
   .about-divide {
@@ -623,7 +631,7 @@ a {
     width: 80%;
     margin: 0 auto;
   }
-  
+
   .twolines ul:nth-child(1) li {
     margin: 0 auto;
     letter-spacing: 0;
@@ -632,7 +640,7 @@ a {
   .light:hover {
     box-shadow: none;
   }
-  
+
   .dark:hover {
     box-shadow: none;
   }
@@ -643,16 +651,16 @@ a {
   }
 
   .projects-section {
-    height: 2700px;
+    height: 3100px;
   }
 }
 
 @media (max-width: 550px) {
   .education-section {
-    height: 1000px;
+    height: 600px;
   }
 
   .projects-section {
-    height: 3300px;
+    height: 3500px;
   }
 }
